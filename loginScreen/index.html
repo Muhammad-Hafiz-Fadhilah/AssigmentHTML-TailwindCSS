@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <title>Assigmnet HTML-TailwindCSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="1Page flex">
+      <!-- Images -->
+      <div class="hidden lg:block md:block sm:block">
+        <img
+          src="../assets/images/picturespages.png"
+          alt=""
+        />
+      </div>
+      <!-- Images end-->
+
+      <!-- Login page container -->
+      <div class="m-auto">
+        <img src="../assets/images/logo1.jpg" alt="Vision Capital" class="hidden sm:block m-auto" />
+
+        <!-- form -->
+        <div class="mt-3 sm:mt-10">
+          <p class="font-poppins font-bold text-base">Nice to see you again</p>
+        </div>
+        <form action="" class="input mt-5">
+          <label for="email" class="hidden lg:block md:block sm:block"
+            >Login</label
+          >
+          <input
+            class="w-full mt-2 mb-2 bg-gray rounded-md h-8"
+            type="text"
+            name="email"
+            placeholder="Email or phone number"
+          />
+          <label for="password" class="hidden lg:block md:block sm:block"
+            >Password</label
+          >
+          <input
+            class="w-full mt-2 bg-gray rouned-md h-8 ps-3"
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+
+          <div class="flex flex-col gap-3">
+            <div>
+              <p class="text-right mt-5 mb-5 text-blue-600">
+                <a href="#">Forgot password?</a>
+              </p>
+            </div>
+            <button
+              class="w-full bg-blue-700 text-white font-poppins h-8 rounded-md"
+            >
+              Sign in
+            </button>
+            <hr class="border-gray my-8" />
+            <button
+              class="w-full bg-black text-white font-poppins flex justify-center items-center gap-1 h-8 rounded-md"
+            >
+              <img src="../assets/images/google.jpg" alt="goole" class="my-1" />
+              Or sign in with Google
+            </button>
+            <div class="mt-10">
+              <p class="text-center">
+                Dont have an account?
+                <a href="#" class="text-blue-600">Sign up now</a>
+              </p>
+            </div>
+          </div>
+        </form>
+        <!-- form end-->
+        <div>
+          <img src="../assets/images/logo1.jpg" alt="Vision Capital" class="mt-10 sm:hidden m-auto">
+        </div>
+        <div class="">
+            <p class="text-center mt-14 sm:mt-56">&copy Perfect Login 2021</p>
+        </div>
+      </div>
+      <!-- Login page container end-->
+    </section>
+  </body>
+</html>
